@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,300;1,700&display=swap" rel="stylesheet"> 
+<script src="script.js" defer></script>
+</head>
+<body>
+    <div class="left">
+        <!-- <img src="./imgs/leafs.jpg" alt="a picture of a big frond"> -->
+        <div class="banner">
+            <img src="./imgs/odin-lined.png" alt="The Odin Project logo" id="odinLogo">
+            <p>ODIN</p>
+        </div>
+    </div>
+    <div class="right">
+        <div class="mainText">
+            <p>This is not a real online service! You know you need something like this in your life to 
+                help you realize your deepest dreams. Sign up <em>now</em> to get started!</p>
+            <p>You <em>know</em> you want to..</p>
+        </div>
+        
+        <form action=""></form>
+            <div class="form">
+                <p class="formHeader">Let's do this!</p>
+                
+                    <fieldset class="formRow">
+                        <div class="textInput">
+                            <label for="firstName">FIRST NAME:</label>
+                            <input type="text" minlength="2" id="firstName">
+                        </div>
+                        <div class="textInput">
+                            <label for="lastName">LAST NAME:</label>
+                            <input type="text" minlength="1" id="lastName">
+                        </div>
+                    </fieldset>
+                    <fieldset class="formRow">
+                        <div class="textInput">
+                            <label for="email">EMAIL: </label>
+                            <input type="email" id="email">
+                        </div>
+                        <div class="textInput">
+                            <label for="phone">PHONE NUMBER: </label>
+                            <input type="text" id="phone">
+                        </div>
+                    </fieldset>
+                    <fieldset class="formRow">
+                        <div class="textInput">
+                            <label for="password">PASSWORD: </label>
+                            <input type="password" minlength="8" id="password">
+                            <div id="errorMsg"></div>
+                        </div>
+                        <div class="textInput">
+                            <label for="confirmPassword">CONFIRM PASSWORD: </label>
+                            <input type="password" minlength="8" id="confirmPassword">
+                        </div>
+                    </fieldset>
+            </div>
+        </form>
+        <div class="footer">
+            <button type="submit" id="formBtn">
+                Create Account
+            </button>
+            <div>
+                Already have an account? <span class="logIn">Log in.</span>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>
